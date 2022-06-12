@@ -15,27 +15,33 @@ import platform
 # I think this will print "hello! Let's get started" by calling the print function.
 print("hello! Let's get started")  # it printed "hello! Let's get started"
 
-some_words = ["what", "does", "this", "line", "do", "?"]
+# this line stores words into a list called "some_words"
+some_words = ["what", "does", "this", "line", "do", "?"] 
 
+#This line prints the words in the list "some words" one by one
 for word in some_words:
     print(word)
 
+#This line prints the words in the list "some words" one by one but changed "word" into "x"
 for x in some_words:
     print(x)
 
 print(some_words)
 
+# if the length of the words in "some words" is greater then 3, then "some_words contains more than 3 words" will be printed.
 if len(some_words) > 3:
     print("some_words contains more than 3 words")
 
-
+# define a function called "uselfulFunction"
 def usefulFunction():
     """
     You may want to look up what uname does before you guess
     what the line below does:
     https://docs.python.org/3/library/platform.html#platform.uname
     """
+
+# print tveryting inside () which is got from "platform.uname"
     print(platform.uname())
 
-
+# to exeute the codes abiove.
 usefulFunction()
