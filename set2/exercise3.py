@@ -2,8 +2,18 @@
 """Modify each function until the tests pass."""
 
 
+from operator import truediv
+
+
 def is_odd(a_number):
-    """Return True if a_number is odd, and False if a_number is even.
+    if a_number % 2 == 0:
+        return False
+    else:
+        return True
+
+
+
+"""Return True if a_number is odd, and False if a_number is even.
 
     Look into modulo division using the '%' operator as one way of doing this.
 
@@ -13,8 +23,8 @@ def is_odd(a_number):
 
     So if a_number modulo two is zero, then it's even.
     """
-    return None
-
+    
+# passed
 
 def fix_it(moves=True, should_move=True):
     """Decide what to do.
