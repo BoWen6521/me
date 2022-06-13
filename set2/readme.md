@@ -5,3 +5,4 @@ len = length
 there must be a () for every def
 I have to write a set of code, then i have to write another line to execute them. 
 index use []
+return does not use "" or ()

@@ -27,6 +27,16 @@ def is_odd(a_number):
 # passed
 
 def fix_it(moves=True, should_move=True):
+    if moves and should_move:
+        return "No Problem"
+    elif moves and not should_move:
+        return "Duct Tape"
+    elif not moves and not should_move:
+        return "No Problem"
+    elif not moves and should_move:
+        return "WD-40"
+    else:
+        return "Something's not right here!"
     """Decide what to do.
 
     Using the engineering flowchart (in week2 folder of the CODE1161-2019
@@ -42,7 +52,7 @@ def fix_it(moves=True, should_move=True):
     As an extra challenge, see if you can get that down to three.
     """
     return None
-
+#passed
 
 def loops_preview():
     """Make 8 poops.
@@ -54,6 +64,7 @@ def loops_preview():
     choc_list = []
     for i in range(8):
         choc_list.append("💩")
+    print(choc_list)
     return choc_list
 
 
@@ -64,8 +75,12 @@ def loops_1a():
     return a list of 10 items, each one a string with exacly one star in it.
     E.g.: ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
     """
-    return None
-
+    star_list = []
+    for i in range (10):
+        star_list.append("*")
+    print(star_list)
+    return star_list
+#passed
 
 def loops_1c(number_of_items=5, symbol="#"):
     """Respond to variables.
@@ -77,7 +92,11 @@ def loops_1c(number_of_items=5, symbol="#"):
     Remember that you're being passed arguments here. Don't hard code the number
     or the symbol, let it be whatever it wants to be.
     """
-    return None
+    sharp_list = []
+    for i in range (5):
+        sharp_list.append("#")
+    print(sharp_list)
+    return sharp_list
 
 
 def loops_2():
