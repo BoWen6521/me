@@ -43,5 +43,5 @@ def usefulFunction():
 # print tveryting inside () which is got from "platform.uname"
     print(platform.uname())
 
-# to exeute the codes abiove.
+# to exeute the codes above.
 usefulFunction()
