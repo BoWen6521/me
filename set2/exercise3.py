@@ -97,7 +97,7 @@ def loops_1c(number_of_items=5, symbol="#"):
         sharp_list.append("#")
     print(sharp_list)
     return sharp_list
-
+#pass
 
 def loops_2():
     """Make a big square starfield.
@@ -117,8 +117,16 @@ def loops_2():
             ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
           ]
     """
-    return None
+    star_square = []
+    for j in range(10):
+        star_list = []
+        for i in range(10):
+            star_list.append("*")
+        star_square.append(star_list)
 
+    print(star_square)
+    return star_square
+#pass
 
 def loops_3():
     """Make a rising block of numbers.
@@ -130,7 +138,8 @@ def loops_3():
         ['2', '2', '2', '2', '2', '2', '2', '2', '2', '2'],
         ['3', '3', '3', '3', '3', '3', '3', '3', '3', '3'],
         ['4', '4', '4', '4', '4', '4', '4', '4', '4', '4'],
-        ['5', '5', '5', '5', '5', '5', '5', '5', '5', '5'],
+        ['5', '5
+        ', '5', '5', '5', '5', '5', '5', '5', '5'],
         ['6', '6', '6', '6', '6', '6', '6', '6', '6', '6'],
         ['7', '7', '7', '7', '7', '7', '7', '7', '7', '7'],
         ['8', '8', '8', '8', '8', '8', '8', '8', '8', '8'],
@@ -141,8 +150,15 @@ def loops_3():
     TIP: notice that this needs to to return strings of numbers,
          so call str(number) to cast.
     """
-    return None
-
+    number_square = []
+    for i in range(10):
+        number_row = []
+        for j in range(10):
+            number_row.append(str(i))
+        number_square.append(number_row)
+    print (number_square)
+    return number_square
+#pass
 
 def loops_4():
     """Make a block of numbers that rises left to right.
@@ -161,8 +177,15 @@ def loops_4():
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     ]
     """
-    return None
-
+    number_square = []
+    for i in range(10):
+        number_row = []
+        for j in range(10):
+            number_row.append(j)
+        number_square.append(number_row)
+    print (number_square)
+    return number_square
+#pass
 
 def loops_5():
     """Make the coordinates of the block.
@@ -191,7 +214,14 @@ def loops_5():
         f"There are {num_bottles} green bottles"
     you'll come to see the pros and cons of each over time.
     """
-    return None
+    number_square = []
+    for i in range(10):
+        coordinates_row = []
+        for j in range (5):
+            coordinates_row.append( "(i" + str(i) + ",j" + str(j) + ")")
+        number_square.append(coordinates_row)
+    print(number_square)
+    return number_square
 
 
 def loops_6():
@@ -214,8 +244,16 @@ def loops_6():
     You can use a variable.
     TIP: look out for the starting condition.
     """
-    return None
+    the_wage = []
 
+    for i in range (10):
+        row = []
+        for j in range(i):
+            row.append(j)
+        the_wage.append(row)
+
+    print (the_wage)
+    return the_wage
 
 def loops_7():
     """Make a pyramid.
@@ -238,6 +276,12 @@ def loops_7():
     This is a hard problem. Use lots of experimentation and draw
     lots of diagrams!
     """
+    the_pyramid = []
+    for i in range(5):
+        row = []
+        
+
+
     return None
 
 
