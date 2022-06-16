@@ -56,7 +56,7 @@
   },
   {
     "of_total": 35,
-    "mark": 28,
+    "mark": 30,
     "results": [
       {
         "value": 1,
@@ -171,11 +171,11 @@
         "name": "Exercise 3: loops_1c - 1d with arguments"
       },
       {
-        "value": 0,
+        "value": 1,
         "name": "Exercise 3: loops_2 - 10\u00d710 stars"
       },
       {
-        "value": 0,
+        "value": 1,
         "name": "Exercise 3: loops_3 - 10 matching lists"
       },
       {
@@ -201,7 +201,69 @@
     ],
     "week_number": 2
   },
-  "3",
+  {
+    "of_total": 14,
+    "mark": 10,
+    "results": [
+      {
+        "value": 1,
+        "name": "Exercise 1: Loop ranger (3, 8, 1)"
+      },
+      {
+        "value": 1,
+        "name": "Exercise 1: Loop ranger (100, 104, 2)"
+      },
+      {
+        "value": 1,
+        "name": "Exercise 1: Two step ranger (100, 104)"
+      },
+      {
+        "value": 1,
+        "name": "Exercise 1: Two step ranger (100, 104)"
+      },
+      {
+        "value": 0,
+        "name": "Exercise 1: Stubborn asker"
+      },
+      {
+        "value": 0,
+        "name": "Exercise 1: Stubborn asker"
+      },
+      {
+        "value": 0,
+        "name": "Exercise 1: not_number_rejector"
+      },
+      {
+        "value": 0,
+        "name": "Exercise 1: test_super_asker"
+      },
+      {
+        "value": 1,
+        "name": "Exercise 2: example guessing game"
+      },
+      {
+        "value": 1,
+        "name": "Exercise 3: guessing game, U&L"
+      },
+      {
+        "value": 1,
+        "name": "Exercise 3: guessing game, polite failures"
+      },
+      {
+        "value": 1,
+        "name": "Exercise 3: guessing game, lowerBound bigger than upperBound"
+      },
+      {
+        "value": 1,
+        "name": "Exercise 3: guessing game, no range to guess in (delta 1)"
+      },
+      {
+        "value": 1,
+        "name": "Exercise 3: guessing game, no range to guess in (equal)"
+      }
+    ],
+    "week_number": 3
+  },
   "4",
   "5",
   "6",

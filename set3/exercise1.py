@@ -35,7 +35,7 @@ def two_step_ranger(start, stop, step=2):
     for i in range (start, stop, step):
         b.append(i)
     return b
-    
+
 
 
 def stubborn_asker(low, high):
@@ -47,13 +47,16 @@ def stubborn_asker(low, high):
     Look up the docs for a function called "input"
     """
 
-    n = input("Please enter a number:")
-    print(n)
+    n = int(input("Please enter a number:"))
+    #print(n)
 
-    while n >= 10:
-        print("Correct answer!")
-    else: 
+    while n < low or n > high:
         print ("Wrong answer! Try again")
+        n = int(input("Please enter a number:"))
+    else: 
+        print("Correct answer!")
+        return n
+        
 
 def not_number_rejector(message):
     """Ask for a number repeatedly until actually given one.
@@ -62,6 +65,10 @@ def not_number_rejector(message):
     (e.g. "cow", "six", "8!") then throw it out and ask for an actual number.
     When you do get a number, return it.
     """
+
+    num = int(input("Enter a number!"))
+
+    while 
     return None
 
 

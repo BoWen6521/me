@@ -126,7 +126,7 @@ def loops_2():
 
     print(star_square)
     return star_square
-#pass
+#??
 
 def loops_3():
     """Make a rising block of numbers.
@@ -277,12 +277,14 @@ def loops_7():
     lots of diagrams!
     """
     the_pyramid = []
+
     for i in range(5):
         row = []
-        
-
-
-    return None
+        for j in range(i):
+            row.append("*")
+    
+    print (the_pyramid)
+    return the_pyramid
 
 
 def little_printer(some_kind_of_list, exercise_name):
