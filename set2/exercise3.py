@@ -276,13 +276,14 @@ def loops_7():
     This is a hard problem. Use lots of experimentation and draw
     lots of diagrams!
     """
+    
     the_pyramid = []
 
     for i in range(5):
         row = []
         for j in range(i):
             row.append("*")
-    
+            
     print (the_pyramid)
     return the_pyramid
 

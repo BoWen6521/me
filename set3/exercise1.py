@@ -66,10 +66,13 @@ def not_number_rejector(message):
     When you do get a number, return it.
     """
 
-    num = int(input("Enter a number!"))
+    message = "Type a number!"
 
-    while 
-    return None
+    while True:
+        print("Good boy!")
+        break
+
+
 
 
 def super_asker(low, high):
