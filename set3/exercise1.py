@@ -68,10 +68,6 @@ def not_number_rejector(message):
 
     message = "Type a number!"
 
-    while True:
-        print("Good boy!")
-        break
-
 
 
 
@@ -81,6 +77,7 @@ def super_asker(low, high):
     Combine what you learnt from stubborn_asker and not_number_rejector
     to make a function that does it all!
     """
+    
     return None
 
 
