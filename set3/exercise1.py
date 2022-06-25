@@ -78,6 +78,17 @@ def super_asker(low, high):
     to make a function that does it all!
     """
     
+    while True:
+        user_input = input(f"Give me a number between  {low} and {high}")
+        try:
+            num = int(user_input)
+            if low < num < high :
+                return num
+            else:
+                print(f"{num} is not between {low} and {high}")
+        except Exception as e:
+            print(f"{user_input} isn't an integer, enter an integer please.")
+                
     return None
 
 
