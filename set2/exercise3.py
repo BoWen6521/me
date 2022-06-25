@@ -280,12 +280,18 @@ def loops_7():
     the_pyramid = []
 
     for i in range(5):
-        row = []
-        for j in range(i):
-            row.append("*")
+        row = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+        if i == 0:
+            row[4] = "*"
+        else:
+            for j in range(4 - i, 4 + i + 1):
+                row[j] = "*"
+        the_pyramid.append(row)
             
-    print (the_pyramid)
+    
     return the_pyramid
+
+
 
 
 def little_printer(some_kind_of_list, exercise_name):
@@ -329,4 +335,5 @@ if __name__ == "__main__":
     little_printer(loops_4(), "loops_4")
     little_printer(loops_5(), "loops_5")
     little_printer(loops_6(), "loops_6")
+    
     little_printer(loops_7(), "loops_7")
