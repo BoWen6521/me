@@ -66,7 +66,14 @@ def not_number_rejector(message):
     When you do get a number, return it.
     """
 
-    message = "Type a number!"
+    while True:
+        try:
+            input_number = int(input(message))
+            print("Thanks! {} looks good".format(input_number))
+            return input_number
+
+        except Exception as e:
+            print("Please enter integer only ({})".format(e))
 
 
 
