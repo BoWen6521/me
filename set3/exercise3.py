@@ -6,6 +6,7 @@ Steps on the way to making your own guessing game.
 import random
 
 
+
 def advancedGuessingGame():
     """Play a guessing game with a user.
 
@@ -29,28 +30,59 @@ def advancedGuessingGame():
     purpose if you can!
     """
 
-def advancedGuessingGame():
-    print("\nWelcome to the guessing game!")
-    print("A number between 0 and _ ?")
-    upperBound = input("Enter an upper bound: ")
-    print(f"OK then, a number between 0 and {upperBound} ?")
-    upperBound = int(upperBound)
+    print("Welcome to the guessing game!")
+    print("A number between _ and _ ?")
+    
+    while True:
+        try:
+            lowerBound = int(input("Enter an lower bound: "))
+            break
+        except Exception as e:
+            print("Please enter integer only ({})".format(e))
 
-    actualNumber = random.randint(0, upperBound)
+    
+    while True:
+        try:
+            upperBound = int(input("Enter an upper bound: "))
+            break
+        except Exception as e:
+            print("Please enter integer only ({})".format(e))
+    actualNumber = random.randint(lowerBound, upperBound)
+
+    if upperBound < lowerBound:
+        print('Upper bound greater than lower bound.')
+        while True:
+            try:
+                upperBound = int(input("Enter an upper bound: "))
+                break
+            except Exception as e:
+                print("Please enter integer only ({})".format(e))
+
+    actualNumber = random.randint(lowerBound, upperBound)
 
     guessed = False
 
     while not guessed:
-        guessedNumber = int(input("Guess a number: "))
+        while True:
+            try:
+                guessedNumber = int(input("Guess a number: "))
+                break
+            except Exception as e:
+                print("Please enter integer only ({})".format(e))
+                
         print(f"You guessed {guessedNumber},")
         if guessedNumber == actualNumber:
             print(f"You got it!! It was {actualNumber}")
             guessed = True
-        elif guessedNumber < actualNumber:
+        elif guessedNumber < actualNumber and lowerBound < guessedNumber < upperBound:
             print("Too small, try again :'(")
-        else:
+        elif guessedNumber > actualNumber and lowerBound < guessedNumber < upperBound:
             print("Too big, try again :'(")
+        else:
+            print("You are outside the bound, try again")
     return "You got it!"
+
+
 
 if __name__ == "__main__":
     print(advancedGuessingGame())
