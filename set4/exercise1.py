@@ -154,7 +154,16 @@ def diarist():
 
     NOTE: this function doesn't return anything. It has the _side effect_ of modifying the file system
     """
+
+    import re
+    def get_filament_value(Trispokedovetiles(laser).gcode):
+        with open(Trispokedovetiles(laser).gcode, 'r') as f_gcode:
+        data = f_gcode.read()
+        re_value = re.search('filament used = .*? \(([0-9.]+)', data)
+    file = 
+    readlines(file)
     pass
+
 
 
 if __name__ == "__main__":
