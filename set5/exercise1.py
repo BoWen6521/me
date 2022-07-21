@@ -38,6 +38,7 @@ def wordy_pyramid():
             pyramid_list.append(message)
         else:
             print("failed a request", r.status_code, i)
+
     for i in range(20, 3, -2):
         url = baseURL.format(length=i)
         r = requests.get(url)
