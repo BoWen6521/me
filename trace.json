@@ -364,7 +364,7 @@
   "7",
   {
     "of_total": 34,
-    "mark": 18,
+    "mark": 21,
     "results": [
       {
         "value": 1,
@@ -431,16 +431,16 @@
         "name": "\none_counter:\n    given:    [0, 1, 2, 5, -9]\n    expected: 1\n    got:      1"
       },
       {
-        "value": 0,
-        "name": "\nn_counter:\n    given:    7\n    expected: 0\n    got:      None"
+        "value": 1,
+        "name": "\nn_counter:\n    given:    7\n    expected: 0\n    got:      0"
       },
       {
-        "value": 0,
-        "name": "\nn_counter:\n    given:    [4, [4, 0, 4]]\n    expected: 2\n    got:      None"
+        "value": 1,
+        "name": "\nn_counter:\n    given:    [4, [4, 0, 4]]\n    expected: 2\n    got:      2"
       },
       {
-        "value": 0,
-        "name": "\nn_counter:\n    given:    [0, [0, 0, 0, '0', 'zero']]\n    expected: 3\n    got:      None"
+        "value": 1,
+        "name": "\nn_counter:\n    given:    [0, [0, 0, 0, '0', 'zero']]\n    expected: 3\n    got:      3"
       },
       {
         "value": 0,

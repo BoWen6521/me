@@ -97,9 +97,9 @@ def n_counter(search_for_this, input_list=[1, 4, 1, 5, 1, 1]) -> int:
     """Count the number of times search_for_this shows up in the input_list.
     Return an integer.
     """
-    count = None
+    count1 = input_list.count(search_for_this)
 
-    return count
+    return count1
 
 
 def fizz_buzz() -> List:
@@ -121,6 +121,7 @@ def fizz_buzz() -> List:
          'FizzBuzz', 16, 17, ...]
     """
     fizz_buzz_list = []
+
     # your code here
 
     return fizz_buzz_list
