@@ -17,7 +17,7 @@ from typing import Dict, List
 def give_me_five() -> int:
     """Returns the integer five."""
 
-    answer = print(int(5))
+    answer = int(5)
     return answer
 
 
@@ -25,17 +25,24 @@ def password_please() -> str:
     """Returns a string, 8 or more characters long, contains at
     least one upper case letter and one lowercase letter.
     TIP: don't put in a real password!"""
-    return None
+    password = "uppercUse"
+    return password
 
 
 def list_please() -> list:
     """Returns a list, you can put anything in the list."""
-    return None
+    list = []
+    for x in range(5):
+        list.append(x)
+    return list
 
 
 def int_list_please() -> list:
     """Returns a list of integers, any integers are fine."""
-    return None
+    list = []
+    for x in range(5):
+        list.append(x)
+    return list
 
 
 def string_list_please() -> list:
