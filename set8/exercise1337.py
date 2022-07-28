@@ -47,23 +47,31 @@ def int_list_please() -> list:
 
 def string_list_please() -> list:
     """Returns a list of strings, any string are fine."""
-    return None
+    list = ["how", "are", "you"]
+    return list
 
 
 def dictionary_please() -> dict:
     """Returns a dictionary, anything you like."""
-    return None
+    dict = {1: "bowen"}
+    return dict
 
 
 def is_it_5(some_number) -> bool:
     """Returns True if the argument passed is 5, otherwise returns False."""
-    well_is_it = None
+    if some_number == 5:
+        return True
+    else:
+        return False
+
     return well_is_it
 
 
 def take_five(some_number) -> int:
     """Subtracts 5 from some_number."""
-    return None
+    five = 5
+    answer = some_number - five
+    return answer
 
 
 def greet(name="Towering Timmy") -> str:
@@ -72,7 +80,8 @@ def greet(name="Towering Timmy") -> str:
     E.g. if given as "Towering Timmy" it should
          return "Well hello, Towering Timmy"
     """
-    return None
+    greeting = f"Well hello, {name}"
+    return greeting
 
 
 def one_counter(input_list=[1, 4, 1, 5, 1, 1]) -> int:
@@ -80,9 +89,8 @@ def one_counter(input_list=[1, 4, 1, 5, 1, 1]) -> int:
     Return an integer.
     TIP: the test will use a different input_list, so don't just return 2
     """
-    count = None
-
-    return count
+    count = input_list.count(1)
+    return int(count)
 
 
 def n_counter(search_for_this, input_list=[1, 4, 1, 5, 1, 1]) -> int:
